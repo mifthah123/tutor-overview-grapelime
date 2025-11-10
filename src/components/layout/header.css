@@ -1,0 +1,164 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 9px 24px;
+  border: 1px solid #e7e7e7;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.sidebar-close svg {
+  font-size: 31px;
+  cursor: pointer;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 214px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2c2c;
+  letter-spacing: 0.5px;
+}
+
+/* ========== Navigation ========== */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link-header {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.nav-link-header:hover {
+  color: #0099cc;
+}
+
+/* ========== Right Section ========== */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  margin-right: -14px;
+}
+
+.greeting {
+  font-size: 15px;
+  color: #777;
+  line-height: 1;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+}
+
+.avatar-header {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #31aeb8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-header p {
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+}
+
+.avatar-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== Notification Bell ========== */
+.notification-bell {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+}
+
+.notification-bell svg {
+  color: #31aeb8;
+}
+
+.bell {
+  font-size: 31px;
+}
+
+.notification-dot {
+  right: -2px;
+  top: 2px;
+  border: 2px solid #fff;
+  height: 14px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px;
+  width: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff4d4f;
+  border-radius: 50%;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 940px) {
+  .header-nav {
+    display: none;
+  }
+
+  .header-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .header-left {
+    gap: 100px;
+  }
+}

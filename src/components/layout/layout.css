@@ -1,0 +1,23 @@
+@media screen and (min-width: 940px) {
+  .laptop-show {
+    display: block;
+  }
+
+  .mobile-show {
+    display: none;
+  }
+
+  .sidebar-close {
+    display: none;
+  }
+
+  .sidebar-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .sidebar-close {
+    display: block;
+  }
+}
